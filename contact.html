@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Engineer Blessd Joe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">MyPortfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h1>Contact Me</h1>
+        <p>If you would like to get in touch with me, feel free to fill out the form below or visit my location.</p>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1014429113495!2d-122.08385148468188!3d37.42199977982562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbbd3b2cf2031%3A0x3f80c7b1772a0b6b!2sGoogleplex!5e0!3m2!1sen!2sus!4v1621944677087!5m2!1sen!2sus"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+
+    <!-- Success Message Popup -->
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <h2>Message Sent!</h2>
+            <button onclick="closeSuccessMessage()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function showSuccessMessage(event) {
+            event.preventDefault();
+            document.getElementById('successPopup').style.display = 'block';
+        }
+
+        function closeSuccessMessage() {
+            document.getElementById('successPopup').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
