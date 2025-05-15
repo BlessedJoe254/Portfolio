@@ -686,3 +686,32 @@ nav a.active {
         height: 300px;
     }
 }
+
+.footer {
+    background-color: #0a1622;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #ff6700;
+}
